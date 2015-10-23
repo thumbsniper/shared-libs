@@ -1,0 +1,18 @@
+{
+  "name": "cupracer/thumbsniper-shared",
+  "description": "shared ThumbSniper files",
+  "homepage": "https://thumbsniper.com",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Thomas Schulte",
+      "email": "thomas@cupracer.de",
+      "homepage": "https://www.mynakedgirlfriend.de",
+      "role": "Project founder"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"ThumbSniper\\": "src/lib/thumbsniper/"}
+  }
+}
