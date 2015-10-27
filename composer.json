@@ -3,7 +3,7 @@
   "description": "shared ThumbSniper files",
   "homepage": "https://thumbsniper.com",
   "minimum-stability": "dev",
-  "license": "proprietary",
+  "license": "GPL-3.0+",
   "authors": [
     {
       "name": "Thomas Schulte",
