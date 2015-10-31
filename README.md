@@ -1,1 +1,1 @@
-# thumbsniper-shared
+# shared-libs
