@@ -28,9 +28,6 @@ class Image
 	/** @var string */
     private $targetId;
 
-	/** @var string */
-    private $fileId;
-
 	/** @var int */
     private $width;
 
@@ -99,22 +96,6 @@ class Image
 	public function setTargetId($targetId)
 	{
 		$this->targetId = $targetId;
-	}
-
-	/**
-	 * @return string
-	 */
-	public function getFileId()
-	{
-		return $this->fileId;
-	}
-
-	/**
-	 * @param string $fileId
-	 */
-	public function setFileId($fileId)
-	{
-		$this->fileId = $fileId;
 	}
 
 	/**
