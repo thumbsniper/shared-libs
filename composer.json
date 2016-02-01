@@ -3,7 +3,6 @@
   "description": "shared ThumbSniper files",
   "type": "library",
   "homepage": "https://thumbsniper.com",
-  "minimum-stability": "dev",
   "license": "GPL-3.0+",
   "authors": [
     {
