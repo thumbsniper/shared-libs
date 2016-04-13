@@ -48,6 +48,9 @@ class Target
     private $tsLastRequested;
 
     /** @var int */
+    private $tsLastFailed;
+
+    /** @var int */
     private $tsCheckedOut;
 
     /** @var int */
@@ -273,6 +276,22 @@ class Target
     public function setTsLastRequested($tsLastRequested)
     {
         $this->tsLastRequested = $tsLastRequested;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTsLastFailed()
+    {
+        return $this->tsLastFailed;
+    }
+
+    /**
+     * @param int $tsLastFailed
+     */
+    public function setTsLastFailed($tsLastFailed)
+    {
+        $this->tsLastFailed = $tsLastFailed;
     }
 
     /**
