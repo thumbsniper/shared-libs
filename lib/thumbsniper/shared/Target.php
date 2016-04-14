@@ -30,9 +30,6 @@ class Target
     private $url;
 
     /** @var string */
-    private $fileId;
-
-    /** @var string */
     private $fileNameBase;
 
     /** @var string */
@@ -180,22 +177,6 @@ class Target
     public function setUrl($url)
     {
         $this->url = $url;
-    }
-
-    /**
-     * @return string
-     */
-    public function getFileId()
-    {
-        return $this->fileId;
-    }
-
-    /**
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
-    {
-        $this->fileId = $fileId;
     }
 
     /**
