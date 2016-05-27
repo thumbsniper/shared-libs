@@ -66,7 +66,10 @@ class Image
 
 	/** @var string */
 	private $amazonS3url;
-	
+
+    /** @var string */
+    private $localPath;
+
     
 
     function __construct()
@@ -311,5 +314,21 @@ class Image
     public function setAmazonS3url($amazonS3url)
     {
         $this->amazonS3url = $amazonS3url;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocalPath()
+    {
+        return $this->localPath;
+    }
+
+    /**
+     * @param string $localPath
+     */
+    public function setLocalPath($localPath)
+    {
+        $this->localPath = $localPath;
     }
 }
