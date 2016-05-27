@@ -64,6 +64,10 @@ class Image
 	/** @var int */
     private $numRequests;
 
+	/** @var string */
+	private $amazonS3url;
+	
+    
 
     function __construct()
     {
@@ -292,4 +296,20 @@ class Image
 	{
 		$this->numRequests = $numRequests;
 	}
+
+    /**
+     * @return string
+     */
+    public function getAmazonS3url()
+    {
+        return $this->amazonS3url;
+    }
+
+    /**
+     * @param string $amazonS3url
+     */
+    public function setAmazonS3url($amazonS3url)
+    {
+        $this->amazonS3url = $amazonS3url;
+    }
 }
