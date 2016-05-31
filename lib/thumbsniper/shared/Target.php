@@ -98,6 +98,11 @@ class Target
     /** @var string */
     private $mimeType;
 
+    /** @var int */
+    private $tsLastCleanup;
+
+    /** @var int */
+    private $counterCleanup;
 
 
     function __construct()
@@ -545,5 +550,37 @@ class Target
     public function setMimeType($mimeType)
     {
         $this->mimeType = $mimeType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTsLastCleanup()
+    {
+        return $this->tsLastCleanup;
+    }
+
+    /**
+     * @param int $tsLastCleanup
+     */
+    public function setTsLastCleanup($tsLastCleanup)
+    {
+        $this->tsLastCleanup = $tsLastCleanup;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCounterCleanup()
+    {
+        return $this->counterCleanup;
+    }
+
+    /**
+     * @param int $counterCleanup
+     */
+    public function setCounterCleanup($counterCleanup)
+    {
+        $this->counterCleanup = $counterCleanup;
     }
 }

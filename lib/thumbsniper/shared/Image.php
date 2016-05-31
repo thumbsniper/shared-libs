@@ -70,6 +70,11 @@ class Image
     /** @var string */
     private $localPath;
 
+	/** @var int */
+	private $tsLastCleanup;
+
+	/** @var int */
+	private $counterCleanup;
     
 
     function __construct()
@@ -330,5 +335,37 @@ class Image
     public function setLocalPath($localPath)
     {
         $this->localPath = $localPath;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTsLastCleanup()
+    {
+        return $this->tsLastCleanup;
+    }
+
+    /**
+     * @param int $tsLastCleanup
+     */
+    public function setTsLastCleanup($tsLastCleanup)
+    {
+        $this->tsLastCleanup = $tsLastCleanup;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCounterCleanup()
+    {
+        return $this->counterCleanup;
+    }
+
+    /**
+     * @param int $counterCleanup
+     */
+    public function setCounterCleanup($counterCleanup)
+    {
+        $this->counterCleanup = $counterCleanup;
     }
 }
